@@ -6,12 +6,18 @@ gem 'heroku'
 
 gem 'devise'
 gem 'cancan'
+gem 'compass', ">= 0.10.6"
+gem 'haml-rails'
+gem 'hpricot'
+gem 'jquery-rails'
+gem 'ruby_parser'
 
 group :development, :test do
 	gem 'capybara'
 	gem 'cucumber'
 	gem 'cucumber-rails'
 	gem 'database_cleaner'
+	gem 'factory_girl'
 	gem 'jasmine'
   gem 'rspec'
 	gem 'rspec-rails'

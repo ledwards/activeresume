@@ -44,6 +44,8 @@ GEM
     celerity (0.8.7)
     childprocess (0.1.6)
       ffi (~> 0.6.3)
+    compass (0.10.6)
+      haml (>= 3.0.4)
     configuration (1.2.0)
     cucumber (0.10.0)
       builder (>= 2.1.2)
@@ -61,14 +63,22 @@ GEM
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    factory_girl (1.3.3)
     ffi (0.6.3)
       rake (>= 0.8.7)
     gherkin (2.3.3)
       json (~> 1.4.6)
+    haml (3.0.25)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     heroku (1.17.5)
       json (~> 1.4.6)
       launchy (~> 0.3.2)
       rest-client (>= 1.4.0, < 1.7.0)
+    hpricot (0.8.3)
     i18n (0.5.0)
     jasmine (1.0.1.1)
       json_pure (>= 1.4.3)
@@ -77,6 +87,9 @@ GEM
       rspec (>= 1.1.5)
       selenium-client (>= 1.2.17)
       selenium-rc (>= 2.1.0)
+    jquery-rails (0.2.6)
+      rails (~> 3.0)
+      thor (~> 0.14.4)
     json (1.4.6)
     json_pure (1.4.6)
     launchy (0.3.7)
@@ -125,6 +138,8 @@ GEM
       activesupport (~> 3.0)
       railties (~> 3.0)
       rspec (~> 2.4.0)
+    ruby_parser (2.0.5)
+      sexp_processor (~> 3.0)
     rubyzip (0.9.4)
     selenium-client (1.2.18)
     selenium-rc (2.2.4)
@@ -134,6 +149,7 @@ GEM
       ffi (~> 0.6.3)
       json_pure
       rubyzip
+    sexp_processor (3.0.5)
     term-ansicolor (1.0.5)
     thor (0.14.6)
     treetop (1.4.9)
@@ -154,14 +170,20 @@ PLATFORMS
 DEPENDENCIES
   cancan
   capybara
+  compass (>= 0.10.6)
   cucumber
   cucumber-rails
   database_cleaner
   devise
+  factory_girl
+  haml-rails
   heroku
+  hpricot
   jasmine
+  jquery-rails
   pg
   rails (= 3.0.3)
   rspec
   rspec-rails
+  ruby_parser
   webrat
