@@ -18,8 +18,11 @@ group :development, :test do
 	gem 'cucumber-rails'
 	gem 'database_cleaner'
 	gem 'factory_girl'
+	gem 'factory_girl_rails'
+	gem 'faker'
 	gem 'jasmine'
   gem 'rspec'
 	gem 'rspec-rails'
+	gem 'shoulda'
 	gem 'webrat'
 end
