@@ -139,4 +139,8 @@ Devise.setup do |config|
   #   end
   #   manager.default_strategies(:scope => :user).unshift :twitter_oauth
   # end
+  
+  config.warden do |manager|
+    manager.failure_app = CustomFailure
+  end
 end

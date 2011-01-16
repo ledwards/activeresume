@@ -1,0 +1,128 @@
+@import "blueprint/reset";
+@import "partials/base";
+@import "blueprint";
+
+@import "blueprint/interaction";
+@import "partials/_border-radius.sass";
+@import "blueprint/buttons";
+@import "partials/multi-line-button";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/gradient";
+
+body.bp {
+	@include blueprint;
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+
+	form {
+	  @include blueprint-form;
+	}
+
+}
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body.two-col {
+  #container {
+    @include container; }
+  #header, #footer {
+    @include column($blueprint-grid-columns); }
+  #sidebar {
+    // One third of the grid columns, rounding down. With 24 cols, this is 8.
+    $sidebar-columns: floor($blueprint-grid-columns / 3);
+    @include column($sidebar-columns); }
+  #content {
+    // Two thirds of the grid columns, rounding up.
+    // With 24 cols, this is 16.
+    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
+    // true means it's the last column in the row
+    @include column($content-columns, true); } }
+
+// My definitions
+
+$blueprint-font-size: 12px;
+$background-color: #eee;
+$page-color: #fff;
+$submit-button-color: #FFA500;
+$title-color: #FFA500;
+$description-color: #666;
+$flash-font-size: 18px;
+
+body {
+	background-color: $background-color;
+}
+
+body.welcome {
+	
+	#container {
+    @include container;
+	}
+	
+	#notice {
+		@include notice;
+		@include prepend-top;
+		font-size: $flash-font-size;
+	}
+	
+	#alert {
+		@include error;
+		@include prepend-top;
+		font-size: $flash-font-size;
+	}
+	
+	#header, #footer {
+		@include column($blueprint-grid-columns);
+		@include prepend-top;
+		@include append-bottom;
+		h1 {
+			@include text-shadow; 
+		}
+		h3 {
+			text-size: $blueprint-font-size * 2;
+			color: $description-color;
+		}
+	}
+	
+	#signin_container {
+		background-color: $page-color;
+		@include column($blueprint-grid-columns * 1 / 2 - 1);
+		@include colborder;
+		@include box-shadow;
+		@include border-radius("25px");
+		@include prepend-top;
+		@include append-bottom;
+		h2 {
+			@include text-shadow; 
+		}
+	}
+
+	#signup_container {
+		background-color: $page_color;
+		@include column($blueprint-grid-columns * 1 / 2 - 1, true);
+		@include box-shadow;
+		@include border-radius("25px");
+		@include prepend-top;
+		@include append-bottom;
+		h2 {
+			@include text-shadow; 
+		}
+	}
+		
+	.form_title {
+		@include prepend-top;
+	}
+	
+	input {
+		@include border-radius("10px");
+	}
+	
+	.submit_button {
+		@include color-multi-line-button($submit-button-color);
+		@include button-button;
+		@include border-radius("8px");
+		@include append-bottom;
+	}
+	
+}

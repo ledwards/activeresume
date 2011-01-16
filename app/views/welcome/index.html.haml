@@ -1,2 +1,37 @@
-%h1 Welcome#index
-%p Find me in app/views/welcome/index.html.haml
+%div#header
+	%h1 ActiveResume
+	%h3
+		ActiveResume helps you create and manage a beautiful, professional-looking online portfolio and resume.
+		%div#errors
+			- if notice
+				%div#notice
+					= notice
+			- if alert
+				%div#alert
+					= alert
+
+%div#signin_container
+	%h2.form_title Sign in
+	= form_for(:user, :url => session_path(:user)) do |f|
+		%div
+			= f.text_field :email, :class => "title", :title => "Email", :id => "user_sign_in_email"
+		%div
+			= f.password_field :password, :class => "title", :title => "Password", :id => "user_sign_in_password"
+		%div
+			= f.submit "Sign in", :class => "submit_button", :id => "user_sign_in_submit"
+
+%div#signup_container
+	%h2.form_title Sign up
+	= form_for(:user, :url => registration_path(:user)) do |f|
+		%div
+			= f.text_field :email, :class => "title", :title => "Email", :id => "user_registration_email"
+		%div
+			= f.password_field :password, :class => "title", :title => "Password", :id => "user_registration_password"
+		%div
+			= f.password_field :password_confirmation, :class => "title", :title => "Password again", :id => "user_registration_password_confirmation"
+		%div
+			= f.submit "Sign up", :class => "submit_button", :id => "user_registration_submit"
+
+%div#footer
+	%p
+		Copyright (c) 2010 Lee Edwards

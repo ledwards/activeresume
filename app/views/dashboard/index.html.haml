@@ -1,0 +1,13 @@
+%div#header
+	%h1 My Dashboard
+	%div#errors
+		- if notice
+			%div#notice
+				= notice
+		- if alert
+			%div#alert
+				= alert
+	%p
+		= link_to "Sign out", destroy_user_session_path
+				
+%p Find me in app/views/dashboard/index.html.haml

@@ -9,6 +9,7 @@ gem 'cancan'
 gem 'compass', ">= 0.10.6"
 gem 'haml-rails'
 gem 'hpricot'
+gem 'fancy-buttons'
 gem 'jquery-rails'
 gem 'ruby_parser'
 

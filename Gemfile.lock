@@ -69,6 +69,8 @@ GEM
       railties (>= 3.0.0)
     faker (0.9.4)
       i18n (~> 0.4)
+    fancy-buttons (1.0.4)
+      compass (>= 0.10.6)
     ffi (0.6.3)
       rake (>= 0.8.7)
     gherkin (2.3.3)
@@ -184,6 +186,7 @@ DEPENDENCIES
   factory_girl
   factory_girl_rails
   faker
+  fancy-buttons
   haml-rails
   heroku
   hpricot
