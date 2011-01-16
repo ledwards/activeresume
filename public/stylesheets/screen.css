@@ -81,7 +81,7 @@ a img {
   border: none;
 }
 
-/* line 13, src/screen.scss */
+/* line 14, src/screen.scss */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -1428,14 +1428,14 @@ body.bp form textarea {
   height: 250px;
 }
 
-/* line 28, src/screen.scss */
+/* line 29, src/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 30, src/screen.scss */
+/* line 31, src/screen.scss */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -1446,7 +1446,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 32, src/screen.scss */
+/* line 33, src/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -1457,7 +1457,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 36, src/screen.scss */
+/* line 37, src/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;
@@ -1469,19 +1469,41 @@ body.two-col #content {
   overflow-x: hidden;
 }
 
-/* line 53, src/screen.scss */
-body {
+/* line 54, src/screen.scss */
+body.bp {
   background-color: #eeeeee;
 }
+/* line 56, src/screen.scss */
+body.bp h1 {
+  font-size: 72px;
+  text-shadow: #aaaaaa 1px 1px 1px;
+}
+/* line 61, src/screen.scss */
+body.bp h2 {
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-size: 1.2em;
+  line-height: 1%;
+  font-weight: bold;
+  padding: 0 2px;
+  font-size: 36px;
+  text-shadow: #aaaaaa 1px 1px 1px;
+}
+/* line 67, src/screen.scss */
+body.bp h3 {
+  font-size: 24px;
+  color: #666666;
+}
 
-/* line 59, src/screen.scss */
+/* line 75, src/screen.scss */
 body.welcome #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 63, src/screen.scss */
+/* line 79, src/screen.scss */
 body.welcome #notice {
   padding: 0.8em;
   margin-bottom: 1em;
@@ -1490,14 +1512,13 @@ body.welcome #notice {
   color: #514721;
   border-color: #ffd324;
   margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  font-size: 18px;
+  font-size: 24px;
 }
 /* line 37, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.welcome #notice a {
   color: #514721;
 }
-/* line 70, src/screen.scss */
+/* line 85, src/screen.scss */
 body.welcome #alert {
   padding: 0.8em;
   margin-bottom: 1em;
@@ -1506,17 +1527,17 @@ body.welcome #alert {
   color: #8a1f11;
   border-color: #fbc2c4;
   margin-top: 1.5em;
-  font-size: 18px;
+  font-size: 24px;
 }
 /* line 29, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.welcome #alert a {
   color: #8a1f11;
 }
-/* line 76, src/screen.scss */
+/* line 91, src/screen.scss */
 body.welcome #header, body.welcome #footer {
   display: inline;
   float: left;
-  margin-right: 10px;
+  margin-right: 0;
   width: 950px;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -1525,25 +1546,17 @@ body.welcome #header, body.welcome #footer {
 * html body.welcome #header, * html body.welcome #footer {
   overflow-x: hidden;
 }
-/* line 80, src/screen.scss */
-body.welcome #header h1, body.welcome #footer h1 {
-  text-shadow: #aaaaaa 1px 1px 1px;
+/* line 97, src/screen.scss */
+body.welcome #sign_in_sign_up_container {
+  padding-left: 40px;
 }
-/* line 83, src/screen.scss */
-body.welcome #header h3, body.welcome #footer h3 {
-  text-size: 24px;
-  color: #666666;
-}
-/* line 89, src/screen.scss */
-body.welcome #signin_container {
+/* line 100, src/screen.scss */
+body.welcome #sign_in_sign_up_container #sign_in_container {
   background-color: white;
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 430px;
-  padding-right: 24px;
-  margin-right: 25px;
-  border-right: 1px solid #eeeeee;
+  width: 390px;
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
   -o-box-shadow: #333333 1px 1px 5px 0;
@@ -1551,24 +1564,35 @@ body.welcome #signin_container {
   border-radius: 25px;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
-  margin-top: 1.5em;
   margin-bottom: 1.5em;
+  height: 320px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.welcome #signin_container {
+* html body.welcome #sign_in_sign_up_container #sign_in_container {
   overflow-x: hidden;
 }
-/* line 97, src/screen.scss */
-body.welcome #signin_container h2 {
-  text-shadow: #aaaaaa 1px 1px 1px;
+/* line 107, src/screen.scss */
+body.welcome #sign_in_sign_up_container #sign_in_container .submit_button {
+  margin-top: 5em;
 }
-/* line 102, src/screen.scss */
-body.welcome #signup_container {
+/* line 112, src/screen.scss */
+body.welcome #sign_in_sign_up_container .spacer {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.welcome #sign_in_sign_up_container .spacer {
+  overflow-x: hidden;
+}
+/* line 116, src/screen.scss */
+body.welcome #sign_in_sign_up_container #sign_up_container {
   background-color: white;
   display: inline;
   float: left;
   margin-right: 0;
-  width: 430px;
+  width: 390px;
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
   -o-box-shadow: #333333 1px 1px 5px 0;
@@ -1576,42 +1600,38 @@ body.welcome #signup_container {
   border-radius: 25px;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
-  margin-top: 1.5em;
   margin-bottom: 1.5em;
+  height: 320px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.welcome #signup_container {
+* html body.welcome #sign_in_sign_up_container #sign_up_container {
   overflow-x: hidden;
 }
-/* line 109, src/screen.scss */
-body.welcome #signup_container h2 {
-  text-shadow: #aaaaaa 1px 1px 1px;
-}
-/* line 114, src/screen.scss */
-body.welcome .form_title {
+/* line 125, src/screen.scss */
+body.welcome #sign_in_sign_up_container .form_title {
   margin-top: 1.5em;
 }
-/* line 118, src/screen.scss */
-body.welcome input {
+/* line 129, src/screen.scss */
+body.welcome #sign_in_sign_up_container input {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-/* line 122, src/screen.scss */
-body.welcome .submit_button {
-  background-color: #ffa500;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffb733), color-stop(50%, #ffa500), color-stop(100%, #cc8400));
-  background-image: -moz-linear-gradient(top, #ffb733 0%, #ffa500 50%, #cc8400 100%);
-  background-image: linear-gradient(top, #ffb733 0%, #ffa500 50%, #cc8400 100%);
-  border-color: #996300;
-  border-left-color: #ffa500;
-  border-top-color: #ffa500;
-  -moz-box-shadow: rgba(242, 233, 217, 0.5) 1px 1px 0 0 inset;
-  -webkit-box-shadow: rgba(242, 233, 217, 0.5) 1px 1px 0 0 inset;
-  -o-box-shadow: rgba(242, 233, 217, 0.5) 1px 1px 0 0 inset;
-  box-shadow: rgba(242, 233, 217, 0.5) 1px 1px 0 0 inset;
+/* line 133, src/screen.scss */
+body.welcome #sign_in_sign_up_container .submit_button {
+  background-color: #6f90be;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #92abce), color-stop(50%, #6f90be), color-stop(100%, #4e75ac));
+  background-image: -moz-linear-gradient(top, #92abce 0%, #6f90be 50%, #4e75ac 100%);
+  background-image: linear-gradient(top, #92abce 0%, #6f90be 50%, #4e75ac 100%);
+  border-color: #3e5d89;
+  border-left-color: #6f90be;
+  border-top-color: #6f90be;
+  -moz-box-shadow: rgba(253, 253, 253, 0.5) 1px 1px 0 0 inset;
+  -webkit-box-shadow: rgba(253, 253, 253, 0.5) 1px 1px 0 0 inset;
+  -o-box-shadow: rgba(253, 253, 253, 0.5) 1px 1px 0 0 inset;
+  box-shadow: rgba(253, 253, 253, 0.5) 1px 1px 0 0 inset;
   color: white;
-  text-shadow: #b37300 0 1px 2px;
+  text-shadow: #46699b 0 1px 2px;
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -1635,28 +1655,28 @@ body.welcome .submit_button {
   margin-bottom: 1.5em;
 }
 /* line 48, src/partials/_multi-line-button.sass */
-body.welcome .submit_button:hover, body.welcome .submit_button:focus {
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffc04d), color-stop(50%, #ffae1a), color-stop(100%, #cc8400));
-  background-image: -moz-linear-gradient(top, #ffc04d 0%, #ffae1a 50%, #cc8400 100%);
-  background-image: linear-gradient(top, #ffc04d 0%, #ffae1a 50%, #cc8400 100%);
+body.welcome #sign_in_sign_up_container .submit_button:hover, body.welcome #sign_in_sign_up_container .submit_button:focus {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #a4b9d6), color-stop(50%, #819ec6), color-stop(100%, #4e75ac));
+  background-image: -moz-linear-gradient(top, #a4b9d6 0%, #819ec6 50%, #4e75ac 100%);
+  background-image: linear-gradient(top, #a4b9d6 0%, #819ec6 50%, #4e75ac 100%);
 }
 /* line 50, src/partials/_multi-line-button.sass */
-body.welcome .submit_button:active, body.welcome .submit_button.depressed {
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #da910b), color-stop(100%, #f2a10d));
-  background-image: -moz-linear-gradient(top, #da910b 0%, #f2a10d 100%);
-  background-image: linear-gradient(top, #da910b 0%, #f2a10d 100%);
+body.welcome #sign_in_sign_up_container .submit_button:active, body.welcome #sign_in_sign_up_container .submit_button.depressed {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #6984aa), color-stop(100%, #7992b4));
+  background-image: -moz-linear-gradient(top, #6984aa 0%, #7992b4 100%);
+  background-image: linear-gradient(top, #6984aa 0%, #7992b4 100%);
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
-  border-color: #996300;
+  border-color: #3e5d89;
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-body.welcome .submit_button {
+body.welcome #sign_in_sign_up_container .submit_button {
   *display: inline;
 }
 /* line 75, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-body.welcome .submit_button img {
+body.welcome #sign_in_sign_up_container .submit_button img {
   margin: 0 3px -3px 0 !important;
   padding: 0;
   border: none;
@@ -1665,11 +1685,15 @@ body.welcome .submit_button img {
   float: none;
 }
 /* line 95, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-body.welcome .submit_button[type] {
+body.welcome #sign_in_sign_up_container .submit_button[type] {
   padding: 4px 10px 4px 7px;
   line-height: 17px;
 }
 /* line 98, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-*:first-child + html body.welcome .submit_button[type] {
+*:first-child + html body.welcome #sign_in_sign_up_container .submit_button[type] {
   padding: 4px 10px 3px 7px;
+}
+/* line 142, src/screen.scss */
+body.welcome div#message {
+  margin-bottom: 1.5em;
 }
