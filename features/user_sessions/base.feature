@@ -19,3 +19,19 @@ Feature: User registration
 		And I fill in "user_sign_in_password" with "password"
 		And I press "Sign in"
 		Then I should be on my dashboard
+
+		Scenario: User fails to sign up
+			When I go to the welcome page
+			And I fill in "user_registration_email" with "testuser@example.com"
+			And I fill in "user_registration_password" with "password"		
+			And I fill in "user_registration_password_confirmation" with "notmatchingpassword"
+			And I press "Sign up"
+			Then I should see "Password doesn't match"		
+
+		Scenario: User fails to sign in
+			Given a user with email "baduser@example.com" and password "password"
+			When I go to the welcome page
+			And I fill in "user_sign_in_email" with "baduser@example.com"
+			And I fill in "user_sign_in_password" with "wrongpassword"
+			And I press "Sign in"
+			Then I should see "Invalid email or password"

@@ -38,8 +38,5 @@ module Activeresume
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-    
-    # To load all files in lib directory 
-    config.autoload_paths += %W(#{config.root}/lib)
   end
 end
