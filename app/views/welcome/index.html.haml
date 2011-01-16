@@ -1,14 +1,14 @@
 %div#header
 	%h1 ActiveResume
 	%h3
-		ActiveResume helps you create and manage a beautiful, professional-looking online portfolio and resume.
-		%div#errors
-			- if notice
-				%div#notice
-					= notice
-			- if alert
-				%div#alert
-					= alert
+		Create and manage a beautiful, professional-looking online portfolio and resume.
+	%div#errors
+		- if notice
+			%div#notice
+				= notice
+		- if alert
+			%div#alert
+				= alert
 
 %div#signin_container
 	%h2.form_title Sign in

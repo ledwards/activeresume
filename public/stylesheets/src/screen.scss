@@ -45,13 +45,27 @@ body.two-col {
 $blueprint-font-size: 12px;
 $background-color: #eee;
 $page-color: #fff;
-$submit-button-color: #FFA500;
+$submit-button-color: #6F90BE;
 $title-color: #FFA500;
 $description-color: #666;
-$flash-font-size: 18px;
+$message-font-size: $blueprint-font-size * 2;
 
-body {
+body.bp {
 	background-color: $background-color;
+	h1 {
+		font-size: $blueprint-font-size * 6;	
+		@include text-shadow; 	
+	}
+
+	h2 {
+		font-size: $blueprint-font-size * 3;
+		@include text-shadow; 
+	}
+
+	h3 {
+		font-size: $message-font-size;
+		color: $description-color;
+	}
 }
 
 body.welcome {
@@ -63,26 +77,19 @@ body.welcome {
 	#notice {
 		@include notice;
 		@include prepend-top;
-		font-size: $flash-font-size;
+		font-size: $message-font-size;
 	}
 	
 	#alert {
 		@include error;
 		@include prepend-top;
-		font-size: $flash-font-size;
+		font-size: $message-font-size;
 	}
 	
 	#header, #footer {
 		@include column($blueprint-grid-columns);
 		@include prepend-top;
 		@include append-bottom;
-		h1 {
-			@include text-shadow; 
-		}
-		h3 {
-			text-size: $blueprint-font-size * 2;
-			color: $description-color;
-		}
 	}
 	
 	#signin_container {
@@ -91,11 +98,7 @@ body.welcome {
 		@include colborder;
 		@include box-shadow;
 		@include border-radius("25px");
-		@include prepend-top;
 		@include append-bottom;
-		h2 {
-			@include text-shadow; 
-		}
 	}
 
 	#signup_container {
@@ -103,11 +106,7 @@ body.welcome {
 		@include column($blueprint-grid-columns * 1 / 2 - 1, true);
 		@include box-shadow;
 		@include border-radius("25px");
-		@include prepend-top;
 		@include append-bottom;
-		h2 {
-			@include text-shadow; 
-		}
 	}
 		
 	.form_title {
@@ -122,6 +121,11 @@ body.welcome {
 		@include color-multi-line-button($submit-button-color);
 		@include button-button;
 		@include border-radius("8px");
+		@include append-bottom;
+		@include prepend-top;
+	}
+	
+	div#message {
 		@include append-bottom;
 	}
 	
