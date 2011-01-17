@@ -135,10 +135,14 @@ body.welcome {
 			@include button-button;
 			@include border-radius("8px");
 			@include append-bottom;
-		}
-		
+		}		
 	}
 		
+	div#message {
+		@include append-bottom;
+		@include prepend-top;
+	}
+	
 	div#message {
 		@include append-bottom;
 	}

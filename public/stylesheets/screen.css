@@ -1693,7 +1693,12 @@ body.welcome #sign_in_sign_up_container .submit_button[type] {
 *:first-child + html body.welcome #sign_in_sign_up_container .submit_button[type] {
   padding: 4px 10px 3px 7px;
 }
-/* line 142, src/screen.scss */
+/* line 141, src/screen.scss */
+body.welcome div#message {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+/* line 146, src/screen.scss */
 body.welcome div#message {
   margin-bottom: 1.5em;
 }
