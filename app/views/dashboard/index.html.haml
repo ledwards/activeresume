@@ -1,13 +1,43 @@
 %div#header
 	%h1 My Dashboard
-	%div#errors
-		- if notice
-			%div#notice
-				= notice
-		- if alert
-			%div#alert
-				= alert
-	%p
-		= link_to "Sign out", destroy_user_session_path
+
+%div#dashboard_container
+
+	%div.spacer
+		%br/
+	
+	/ %div#content
+	/ 	%h3 Your Resume Here
+
+	%div#no_content
+		%h3 No resumes found. Create one!
+
+	%div.spacer
+		%br/
+
+	%div#sidebar
+		%dl
+			%dt
+				My Resume
+			%dd
+				= link_to "Edit personal information", "#"
+			%dd
+				= link_to "Add employment history", "#"
+			%dd
+				= link_to "Add education history", "#"
+			%dd
+				= link_to "Add featured work", "#"
+		%dl
+			%dt
+				My Portfolio
+			%dd
+				= link_to "Add portfolio item", "#"
+		%dl
+			%dt
+				My Account
+			%dd
+				= link_to "Account settings", "#"
+			%dd
+				= link_to "Sign out", destroy_user_session_path
 				
-%p Find me in app/views/dashboard/index.html.haml
+%div#footer
