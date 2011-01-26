@@ -27,7 +27,3 @@ group :development, :test do
 	gem 'shoulda'
 	gem 'webrat'
 end
-
-unless $heroku
-  gem 'ruby-debug19'
-end
