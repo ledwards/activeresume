@@ -24,7 +24,10 @@ group :development, :test do
 	gem 'jasmine'
   gem 'rspec'
 	gem 'rspec-rails'
-  gem 'ruby-debug19'
 	gem 'shoulda'
 	gem 'webrat'
+end
+
+unless $heroku
+  gem 'ruby-debug19'
 end
