@@ -10,7 +10,37 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110114060236) do
+ActiveRecord::Schema.define(:version => 20110126052527) do
+
+  create_table "educations", :force => true do |t|
+    t.string   "major"
+    t.string   "institution_name"
+    t.string   "location"
+    t.boolean  "current"
+    t.integer  "start_month"
+    t.integer  "start_year"
+    t.integer  "end_month"
+    t.integer  "end_year"
+    t.text     "summary"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "employments", :force => true do |t|
+    t.string   "job_title"
+    t.string   "company_name"
+    t.string   "location"
+    t.boolean  "current"
+    t.integer  "start_month"
+    t.integer  "start_year"
+    t.integer  "end_month"
+    t.integer  "end_year"
+    t.text     "summary"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false

@@ -1,16 +1,36 @@
 %div#header
 	%h1 My Dashboard
 
-%div#dashboard_container
+	%div#errors
+		- if notice
+			%div#notice
+				= notice
+		- if alert
+			%div#alert
+				= alert
 
+%div#dashboard_container
 	%div.spacer
 		%br/
 	
-	/ %div#content
-	/ 	%h3 Your Resume Here
-
-	%div#no_content
-		%h3 No resumes found. Create one!
+	%div#resume
+		%h3 Your Resume
+		
+		%h4 Employment History
+		- if @employments
+			%ul
+				= render :partial => "employment", :collection => @employments
+		- else
+			%ul
+				%li No employment records. Add one!
+			
+		%h4 Education History
+		- if @educations
+			%ul
+				= render :partial => "education", :collection => @educations
+		- else
+			%ul
+				%li No education records. Add one!
 
 	%div.spacer
 		%br/
@@ -22,9 +42,9 @@
 			%dd
 				= link_to "Edit personal information", "#"
 			%dd
-				= link_to "Add employment history", "#"
+				= link_to "Add employment history", new_employment_path
 			%dd
-				= link_to "Add education history", "#"
+				= link_to "Add education history", new_education_path
 			%dd
 				= link_to "Add featured work", "#"
 		%dl

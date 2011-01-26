@@ -5,5 +5,8 @@ Activeresume::Application.routes.draw do
   devise_for :users, :controllers => { :registrations => "registrations" }
   match 'dashboard' => 'dashboard#index', :as => 'user_root'
   
+  resources :employments
+  resources :educations
+  
   root :to => "welcome#index"
 end

@@ -20,6 +20,14 @@ body.bp {
 
 	form {
 	  @include blueprint-form;
+
+		select {
+			font-size: 1.5em;
+		}
+
+		label {
+			font-size: 1.5em;
+		}
 	}
 
 }
@@ -30,6 +38,7 @@ $blueprint-font-size: 1em;
 $background-color: #eee;
 $page-color: #fff;
 $submit-button-color: #6F90BE;
+$save-button-color: #3AB700;
 $title-color: #FFA500;
 $description-color: #666;
 $message-font-size: $blueprint-font-size * 2;
@@ -155,15 +164,77 @@ body.dashboard {
 		}	
 
 	  #no_content {
-	    @include column(16, true);
+	    @include column(16);
 			text-align: left;
 		}
 	
-	  #content {
+	  #resume {
 			background-color: $page-color;
-	    @include column(16, true);
+	    @include column(16);
 			@include box-shadow;
 			text-align: left;
+		}
+	}
+}
+
+body.employments, body.educations {
+	#sidebar {
+    @include column(6, true);
+		text-align: left;
+	}
+	
+	.spacer {
+		@include column(1);
+	}	
+
+  #content {
+    @include column(16);
+		text-align: left;
+	}
+	
+	.save_button {
+		@include color-multi-line-button($save-button-color);
+		@include button-button;
+		@include border-radius("8px");
+		@include append-bottom;
+		font-size: 1.5em;
+	}
+	
+	textarea#employment_summary, textarea#education_summary {
+		width: 300px;
+		height: 5em;
+		color: #999999;
+    display: block;
+    font-family: Lucida Grande;
+    font-size: 18px;
+	}
+	
+	span.watermark {
+    color: #999999;
+    display: block;
+    font-family: Lucida Grande;
+    font-size: 18px;
+    height: 34px;
+    left: 9px;
+    line-height: 34px;
+    pointer-events: none;
+    position: absolute;
+    text-align: left;
+    top: 9px;
+	}
+	
+	label.hidden { display: none; }
+	
+	form {
+		p {
+			font-weight: bold;
+			font-size: 1.5em;
+			display: inline;
+		}
+		
+		.iPhoneCheckContainer {
+			margin-left: 12em;
+			margin-top: -2.2em;
 		}
 	}
 }

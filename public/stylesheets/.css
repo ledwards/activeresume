@@ -1,0 +1,54 @@
+/*
+Syntax error: Invalid CSS after "#": expected id name, was " Add your own t..."
+        on line 1 of /Users/ledwards/Development/rails/activeresume/Rakefile
+
+1: /Users/ledwards/Development/rails/activeresume/Rakefile
+
+Backtrace:
+/Users/ledwards/Development/rails/activeresume/Rakefile:1
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/scss/parser.rb:838:in `expected'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/scss/parser.rb:813:in `expected'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/scss/parser.rb:796:in `expr!'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/scss/parser.rb:502:in `id_selector'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/scss/parser.rb:462:in `simple_selector_sequence'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/scss/parser.rb:443:in `_selector'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/scss/parser.rb:431:in `selector_comma_sequence'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/scss/parser.rb:795:in `expr!'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/scss/static_parser.rb:18:in `parse_selector'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:189:in `perform!'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `block in perform_children'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/root_node.rb:59:in `perform!'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/root_node.rb:37:in `perform'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/tree/root_node.rb:29:in `render'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/engine.rb:197:in `_render'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/engine.rb:169:in `block in render'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/haml/util.rb:294:in `silence_haml_warnings'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/haml-3.0.25/lib/sass/engine.rb:169:in `render'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/compiler.rb:103:in `block in compile'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/logger.rb:43:in `red'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/compiler.rb:102:in `compile'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/compiler.rb:93:in `compile_if_required'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/compiler.rb:84:in `block in run'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `each'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `run'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:92:in `recompile'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/commands/watch_project.rb:40:in `perform'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/commands/base.rb:18:in `execute'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:38:in `perform!'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/bin/compass:26:in `<top (required)>'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/bin/compass:19:in `load'
+/Users/ledwards/.rvm/gems/ruby-1.9.2-p0@dynamicresume/bin/compass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"#\": expected id name, was \" Add your own t...\"\A         on line 1 of /Users/ledwards/Development/rails/activeresume/Rakefile\A \A 1: /Users/ledwards/Development/rails/activeresume/Rakefile"; }

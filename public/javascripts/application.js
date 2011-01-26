@@ -3,4 +3,10 @@
 
 $(document).ready(function() {
 	$('input').watermark();
+	$('textarea').watermark();
+	$('input.checkbox').iphoneStyle({ checkedLabel: 'Yes', uncheckedLabel: 'No' });
+	$('div#current input').change( function() {
+		$('div#end').toggle();
+	});
 });
+
