@@ -13,24 +13,26 @@
 	%div.spacer
 		%br/
 	
-	%div#resume
-		%h3 Your Resume
+	%div#resume_preview
+		%div
+			%h3
+				= "#{current_user.display_name}'s Resume"
 		
-		%h4 Employment History
-		- if @employments
-			%ul
-				= render :partial => "employment", :collection => @employments
-		- else
-			%ul
-				%li No employment records. Add one!
+			%h4 Employment History
+			- if @employments
+				%ul
+					= render :partial => "employment", :collection => @employments
+			- else
+				%ul
+					%li No employment records. Add one!
 			
-		%h4 Education History
-		- if @educations
-			%ul
-				= render :partial => "education", :collection => @educations
-		- else
-			%ul
-				%li No education records. Add one!
+			%h4 Education History
+			- if @educations
+				%ul
+					= render :partial => "education", :collection => @educations
+			- else
+				%ul
+					%li No education records. Add one!
 
 	%div.spacer
 		%br/
@@ -40,7 +42,7 @@
 			%dt
 				My Resume
 			%dd
-				= link_to "Edit personal information", "#"
+				= link_to "Edit personal information", edit_profile_path
 			%dd
 				= link_to "Add employment history", new_employment_path
 			%dd

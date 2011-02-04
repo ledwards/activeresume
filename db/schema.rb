@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110126052527) do
+ActiveRecord::Schema.define(:version => 20110203142149) do
 
   create_table "educations", :force => true do |t|
     t.string   "major"
@@ -37,6 +37,24 @@ ActiveRecord::Schema.define(:version => 20110126052527) do
     t.integer  "end_month"
     t.integer  "end_year"
     t.text     "summary"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "profiles", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "middle_name"
+    t.text     "summary"
+    t.string   "address_line_1"
+    t.string   "address_line_2"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zip_code"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "website"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

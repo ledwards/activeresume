@@ -7,6 +7,7 @@ Activeresume::Application.routes.draw do
   
   resources :employments
   resources :educations
+  resource :profile
   
   root :to => "welcome#index"
 end

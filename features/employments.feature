@@ -15,7 +15,7 @@ Feature: Employment history
 		And I select "2010" from "Start year"
 		And I fill in "Summary" with "Big old job description."
 		And I press "Save"
-		Then I should see "Pivotal Labs" within "#resume"
+		Then I should see "Pivotal Labs" within "#resume_preview"
 	
 	@javascript
 	Scenario: User creates second employment record
@@ -33,4 +33,4 @@ Feature: Employment history
 		And I select "2010" from "Start year"
 		And I fill in "Summary" with "Big old job description."
 		And I press "Save"
-		Then I should see "iRobot" within "#resume"
+		Then I should see "iRobot" within "#resume_preview"

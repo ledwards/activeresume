@@ -9,5 +9,16 @@ class User < ActiveRecord::Base
   
   has_many :employments
   has_many :educations
+  has_one :profile
+  
+  before_validation :create_profile
+  
+  def create_profile
+    self.profile ||= Profile.new(:email => self.email)
+  end
+  
+  def display_name
+    profile.first_name.present? ? "#{profile.first_name} #{profile.last_name}".strip : email
+  end
   
 end

@@ -15,7 +15,7 @@ Feature: Education history
 		And I select "2010" from "Start year"
 		And I fill in "Summary" with "I got straight A's and was totally awesome."
 		And I press "Save"
-		Then I should see "Olin College" within "#resume"
+		Then I should see "Olin College" within "#resume_preview"
 	
 	@javascript
 	Scenario: User creates second education record
@@ -33,4 +33,4 @@ Feature: Education history
 		And I select "2010" from "Start year"
 		And I fill in "Summary" with "Big old college description."
 		And I press "Save"
-		Then I should see "Worcester Polytechnic Institute" within "#resume"
+		Then I should see "Worcester Polytechnic Institute" within "#resume_preview"
