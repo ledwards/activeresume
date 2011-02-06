@@ -4,7 +4,7 @@ class DashboardController < ApplicationController
   def index
     @employments = current_user.employments
     @educations = current_user.educations
-    @portfolio_items = current_user.portfolio_items
+    @projects = current_user.projects
   end
 
 end

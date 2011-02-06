@@ -1,4 +1,4 @@
-Factory.define :portfolio_item do |f|
+Factory.define :project do |f|
   f.title { Faker::Lorem.sentence }
   f.institution_name { Faker::Lorem.sentence }
   f.location { Faker::Address.city }
@@ -10,7 +10,7 @@ Factory.define :portfolio_item do |f|
   f.current false
 end
 
-Factory.define :current_portfolio_item do |f|
+Factory.define :current_project do |f|
   f.title { Faker::Lorem.sentence }
   f.institution_name { Faker::Lorem.sentence }
   f.location { Faker::Address.city }

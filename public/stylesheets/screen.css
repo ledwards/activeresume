@@ -1747,7 +1747,7 @@ body.dashboard #dashboard_container #resume_preview div {
 }
 
 /* line 185, src/screen.scss */
-body.employments #sidebar, body.educations #sidebar, body.profiles #sidebar, body.portfolio_items #sidebar {
+body.employments #sidebar, body.educations #sidebar, body.profiles #sidebar, body.projects #sidebar {
   display: inline;
   float: left;
   margin-right: 0;
@@ -1755,22 +1755,22 @@ body.employments #sidebar, body.educations #sidebar, body.profiles #sidebar, bod
   text-align: left;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.employments #sidebar, * html body.educations #sidebar, * html body.profiles #sidebar, * html body.portfolio_items #sidebar {
+* html body.employments #sidebar, * html body.educations #sidebar, * html body.profiles #sidebar, * html body.projects #sidebar {
   overflow-x: hidden;
 }
 /* line 190, src/screen.scss */
-body.employments .spacer, body.educations .spacer, body.profiles .spacer, body.portfolio_items .spacer {
+body.employments .spacer, body.educations .spacer, body.profiles .spacer, body.projects .spacer {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 30px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.employments .spacer, * html body.educations .spacer, * html body.profiles .spacer, * html body.portfolio_items .spacer {
+* html body.employments .spacer, * html body.educations .spacer, * html body.profiles .spacer, * html body.projects .spacer {
   overflow-x: hidden;
 }
 /* line 194, src/screen.scss */
-body.employments #content, body.educations #content, body.profiles #content, body.portfolio_items #content {
+body.employments #content, body.educations #content, body.profiles #content, body.projects #content {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -1778,11 +1778,11 @@ body.employments #content, body.educations #content, body.profiles #content, bod
   text-align: left;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.employments #content, * html body.educations #content, * html body.profiles #content, * html body.portfolio_items #content {
+* html body.employments #content, * html body.educations #content, * html body.profiles #content, * html body.projects #content {
   overflow-x: hidden;
 }
 /* line 199, src/screen.scss */
-body.employments .save_button, body.educations .save_button, body.profiles .save_button, body.portfolio_items .save_button {
+body.employments .save_button, body.educations .save_button, body.profiles .save_button, body.projects .save_button {
   background-color: #3ab700;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #4aea00), color-stop(50%, #3ab700), color-stop(100%, #2a8400));
   background-image: -moz-linear-gradient(top, #4aea00 0%, #3ab700 50%, #2a8400 100%);
@@ -1820,13 +1820,13 @@ body.employments .save_button, body.educations .save_button, body.profiles .save
   font-size: 1.5em;
 }
 /* line 48, src/partials/_multi-line-button.sass */
-body.employments .save_button:hover, body.employments .save_button:focus, body.educations .save_button:hover, body.educations .save_button:focus, body.profiles .save_button:hover, body.profiles .save_button:focus, body.portfolio_items .save_button:hover, body.portfolio_items .save_button:focus {
+body.employments .save_button:hover, body.employments .save_button:focus, body.educations .save_button:hover, body.educations .save_button:focus, body.profiles .save_button:hover, body.profiles .save_button:focus, body.projects .save_button:hover, body.projects .save_button:focus {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #54ff04), color-stop(50%, #42d100), color-stop(100%, #2a8400));
   background-image: -moz-linear-gradient(top, #54ff04 0%, #42d100 50%, #2a8400 100%);
   background-image: linear-gradient(top, #54ff04 0%, #42d100 50%, #2a8400 100%);
 }
 /* line 50, src/partials/_multi-line-button.sass */
-body.employments .save_button:active, body.employments .save_button.depressed, body.educations .save_button:active, body.educations .save_button.depressed, body.profiles .save_button:active, body.profiles .save_button.depressed, body.portfolio_items .save_button:active, body.portfolio_items .save_button.depressed {
+body.employments .save_button:active, body.employments .save_button.depressed, body.educations .save_button:active, body.educations .save_button.depressed, body.profiles .save_button:active, body.profiles .save_button.depressed, body.projects .save_button:active, body.projects .save_button.depressed {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #359608), color-stop(100%, #3dae09));
   background-image: -moz-linear-gradient(top, #359608 0%, #3dae09 100%);
   background-image: linear-gradient(top, #359608 0%, #3dae09 100%);
@@ -1837,11 +1837,11 @@ body.employments .save_button:active, body.employments .save_button.depressed, b
   border-color: #1a5100;
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-body.employments .save_button, body.educations .save_button, body.profiles .save_button, body.portfolio_items .save_button {
+body.employments .save_button, body.educations .save_button, body.profiles .save_button, body.projects .save_button {
   *display: inline;
 }
 /* line 75, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-body.employments .save_button img, body.educations .save_button img, body.profiles .save_button img, body.portfolio_items .save_button img {
+body.employments .save_button img, body.educations .save_button img, body.profiles .save_button img, body.projects .save_button img {
   margin: 0 3px -3px 0 !important;
   padding: 0;
   border: none;
@@ -1850,16 +1850,16 @@ body.employments .save_button img, body.educations .save_button img, body.profil
   float: none;
 }
 /* line 95, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-body.employments .save_button[type], body.educations .save_button[type], body.profiles .save_button[type], body.portfolio_items .save_button[type] {
+body.employments .save_button[type], body.educations .save_button[type], body.profiles .save_button[type], body.projects .save_button[type] {
   padding: 4px 10px 4px 7px;
   line-height: 17px;
 }
 /* line 98, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-*:first-child + html body.employments .save_button[type], *:first-child + html body.educations .save_button[type], *:first-child + html body.profiles .save_button[type], *:first-child + html body.portfolio_items .save_button[type] {
+*:first-child + html body.employments .save_button[type], *:first-child + html body.educations .save_button[type], *:first-child + html body.profiles .save_button[type], *:first-child + html body.projects .save_button[type] {
   padding: 4px 10px 3px 7px;
 }
 /* line 207, src/screen.scss */
-body.employments textarea#employment_summary, body.employments textarea#education_summary, body.employments textarea#project_description, body.educations textarea#employment_summary, body.educations textarea#education_summary, body.educations textarea#project_description, body.profiles textarea#employment_summary, body.profiles textarea#education_summary, body.profiles textarea#project_description, body.portfolio_items textarea#employment_summary, body.portfolio_items textarea#education_summary, body.portfolio_items textarea#project_description {
+body.employments textarea#employment_summary, body.employments textarea#education_summary, body.employments textarea#project_description, body.educations textarea#employment_summary, body.educations textarea#education_summary, body.educations textarea#project_description, body.profiles textarea#employment_summary, body.profiles textarea#education_summary, body.profiles textarea#project_description, body.projects textarea#employment_summary, body.projects textarea#education_summary, body.projects textarea#project_description {
   width: 300px;
   height: 5em;
   color: #999999;
@@ -1867,11 +1867,11 @@ body.employments textarea#employment_summary, body.employments textarea#educatio
   font-size: 18px;
 }
 /* line 215, src/screen.scss */
-body.employments textarea, body.educations textarea, body.profiles textarea, body.portfolio_items textarea {
+body.employments textarea, body.educations textarea, body.profiles textarea, body.projects textarea {
   display: block;
 }
 /* line 219, src/screen.scss */
-body.employments span.watermark, body.educations span.watermark, body.profiles span.watermark, body.portfolio_items span.watermark {
+body.employments span.watermark, body.educations span.watermark, body.profiles span.watermark, body.projects span.watermark {
   color: #999999;
   display: block;
   font-family: Lucida Grande;
@@ -1885,17 +1885,17 @@ body.employments span.watermark, body.educations span.watermark, body.profiles s
   top: 9px;
 }
 /* line 233, src/screen.scss */
-body.employments label.hidden, body.educations label.hidden, body.profiles label.hidden, body.portfolio_items label.hidden {
+body.employments label.hidden, body.educations label.hidden, body.profiles label.hidden, body.projects label.hidden {
   display: none;
 }
 /* line 236, src/screen.scss */
-body.employments form p, body.educations form p, body.profiles form p, body.portfolio_items form p {
+body.employments form p, body.educations form p, body.profiles form p, body.projects form p {
   font-weight: bold;
   font-size: 1.5em;
   display: inline;
 }
 /* line 242, src/screen.scss */
-body.employments form .iPhoneCheckContainer, body.educations form .iPhoneCheckContainer, body.profiles form .iPhoneCheckContainer, body.portfolio_items form .iPhoneCheckContainer {
+body.employments form .iPhoneCheckContainer, body.educations form .iPhoneCheckContainer, body.profiles form .iPhoneCheckContainer, body.projects form .iPhoneCheckContainer {
   margin-left: 12em;
   margin-top: -2.2em;
 }

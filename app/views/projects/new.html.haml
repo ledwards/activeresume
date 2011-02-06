@@ -2,8 +2,8 @@
 	%h1 My Portfolio
 
 %div#content
-	%h3 New portfolio item
-	= form_for(@portfolio_item) do |f|
+	%h3 New project
+	= form_for(@project) do |f|
 		%div
 			= f.label :title, :class => :hidden
 			= f.text_field :title, :class => "title", :title => "Title"

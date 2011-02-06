@@ -56,10 +56,6 @@ ActiveRecord::Schema.define(:version => 20110206155820) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
   end
 
   create_table "profiles", :force => true do |t|
@@ -78,6 +74,26 @@ ActiveRecord::Schema.define(:version => 20110206155820) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "projects", :force => true do |t|
+    t.string   "title"
+    t.string   "institution_name"
+    t.string   "location"
+    t.boolean  "current"
+    t.integer  "start_month"
+    t.integer  "start_year"
+    t.integer  "end_month"
+    t.integer  "end_year"
+    t.text     "description"
+    t.string   "hyperlink"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "users", :force => true do |t|

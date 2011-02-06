@@ -1,4 +1,4 @@
-class PortfolioItemsController < ApplicationController
+class ProjectsController < ApplicationController
   before_filter :authenticate_user!, :except => [:show]
   load_and_authorize_resource
   skip_authorize_resource :only => [:show]
@@ -7,11 +7,11 @@ class PortfolioItemsController < ApplicationController
   end
   
   def create
-    @portfolio_item.user_id = current_user.id
-    if @portfolio_item.save
+    @project.user_id = current_user.id
+    if @project.save
       redirect_to root_path
     else
-      redirect_to new_portfolio_item_path
+      redirect_to new_project_path
     end
   end
 

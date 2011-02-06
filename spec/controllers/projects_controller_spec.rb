@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PortfolioItemsController do
+describe ProjectsController do
   describe "new" do
     before do
       @user = Factory(:user)
@@ -17,9 +17,9 @@ describe PortfolioItemsController do
       response.should render_template(:new)
     end
     
-    it "assign a new portfolio item" do
+    it "assign a new project" do
       get :new
-      assigns(:portfolio_item).should be_new_record
+      assigns(:project).should be_new_record
     end
   end
   
@@ -31,31 +31,31 @@ describe PortfolioItemsController do
     
     context "for valid parameters" do
       before do
-        @valid_params = Factory.attributes_for(:portfolio_item)
+        @valid_params = Factory.attributes_for(:project)
       end
       
-      it "creates a new Portfolio Item record" do
-        expect { post :create, :portfolio_item => @valid_params }.should change(PortfolioItem, :count).by(1)
+      it "creates a new Project record" do
+        expect { post :create, :project => @valid_params }.should change(Project, :count).by(1)
       end
       
       it "redirects to root path" do
-        post :create, :portfolio_item => @valid_params
+        post :create, :project => @valid_params
         response.should redirect_to(root_path)
       end
     end
     
     context "for invalid parameters" do
       before do
-        @invalid_params = Factory.attributes_for(:portfolio_item).reject{ |k,v| k == :title }
+        @invalid_params = Factory.attributes_for(:project).reject{ |k,v| k == :title }
       end
       
-      it "does not create a new Portfolio Item record" do
-        expect { post :create, :portfolio_item => @invalid_params }.should_not change(PortfolioItem, :count)
+      it "does not create a new Project record" do
+        expect { post :create, :project => @invalid_params }.should_not change(Project, :count)
       end
       
       it "renders new" do
-        post :create, :portfolio_item => @invalid_params
-        response.should redirect_to(new_portfolio_item_path)
+        post :create, :project => @invalid_params
+        response.should redirect_to(new_project_path)
       end
     end
   end

@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe PortfolioItem do
+describe Project do
   it "has a valid factory" do
-    Factory.build(:portfolio_item).should be_valid
+    Factory.build(:project).should be_valid
   end
   
   it { should validate_presence_of :title }

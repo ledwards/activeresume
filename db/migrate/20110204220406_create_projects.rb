@@ -1,6 +1,6 @@
-class CreatePortfolioItems < ActiveRecord::Migration
+class CreateProjects < ActiveRecord::Migration
   def self.up
-    create_table :portfolio_items do |t|
+    create_table :projects do |t|
       t.string :title
       t.string :institution_name
       t.string :location
@@ -19,6 +19,6 @@ class CreatePortfolioItems < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :portfolio_items
+    drop_table :projects
   end
 end

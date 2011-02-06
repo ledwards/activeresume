@@ -34,13 +34,13 @@
 				%ul
 					%li No education records. Add one!
 			
-			%h4 Portfolio Items
-			- if @portfolio_items.any?
+			%h4 Projects
+			- if @projects.any?
 				%ul
-					= render :partial => "portfolio_item", :collection => @portfolio_items
+					= render :partial => "project", :collection => @projects
 			- else
 				%ul
-					%li No portfolio items. Add one!
+					%li No projects. Add one!
 
 	%div.spacer
 		%br/
@@ -61,7 +61,7 @@
 			%dt
 				My Portfolio
 			%dd
-				= link_to "Add portfolio item", new_portfolio_item_path
+				= link_to "Add project", new_project_path
 		%dl
 			%dt
 				My Account

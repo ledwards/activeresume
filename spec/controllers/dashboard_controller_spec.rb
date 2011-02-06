@@ -38,10 +38,10 @@ describe DashboardController do
         assigns[:educations].should == [education]
       end
       
-      it "assigns portfolio items" do
-        portfolio_item = Factory.create(:portfolio_item, :user_id => @user.id)
+      it "assigns projects" do
+        project = Factory.create(:project, :user_id => @user.id)
         get :index
-        assigns[:portfolio_items].should == [portfolio_item]
+        assigns[:projects].should == [project]
       end
     end
   end

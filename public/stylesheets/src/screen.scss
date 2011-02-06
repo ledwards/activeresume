@@ -181,7 +181,7 @@ body.dashboard {
 	}
 }
 
-body.employments, body.educations, body.profiles, body.portfolio_items {
+body.employments, body.educations, body.profiles, body.projects {
 	#sidebar {
     @include column(6, true);
 		text-align: left;
