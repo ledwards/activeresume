@@ -181,7 +181,7 @@ body.dashboard {
 	}
 }
 
-body.employments, body.educations, body.profiles {
+body.employments, body.educations, body.profiles, body.portfolio_items {
 	#sidebar {
     @include column(6, true);
 		text-align: left;
@@ -204,7 +204,7 @@ body.employments, body.educations, body.profiles {
 		font-size: 1.5em;
 	}
 	
-	textarea#employment_summary, textarea#education_summary {
+	textarea#employment_summary, textarea#education_summary, textarea#project_description {
 		width: 300px;
 		height: 5em;
 		color: #999999;

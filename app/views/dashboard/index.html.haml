@@ -19,7 +19,7 @@
 				= "#{current_user.display_name}'s Resume"
 		
 			%h4 Employment History
-			- if @employments
+			- if @employments.any?
 				%ul
 					= render :partial => "employment", :collection => @employments
 			- else
@@ -27,12 +27,20 @@
 					%li No employment records. Add one!
 			
 			%h4 Education History
-			- if @educations
+			- if @educations.any?
 				%ul
 					= render :partial => "education", :collection => @educations
 			- else
 				%ul
 					%li No education records. Add one!
+			
+			%h4 Portfolio Items
+			- if @portfolio_items.any?
+				%ul
+					= render :partial => "portfolio_item", :collection => @portfolio_items
+			- else
+				%ul
+					%li No portfolio items. Add one!
 
 	%div.spacer
 		%br/
@@ -53,7 +61,7 @@
 			%dt
 				My Portfolio
 			%dd
-				= link_to "Add portfolio item", "#"
+				= link_to "Add portfolio item", new_portfolio_item_path
 		%dl
 			%dt
 				My Account

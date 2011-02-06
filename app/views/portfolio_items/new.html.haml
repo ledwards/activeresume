@@ -1,0 +1,48 @@
+%div#header
+	%h1 My Portfolio
+
+%div#content
+	%h3 New portfolio item
+	= form_for(@portfolio_item) do |f|
+		%div
+			= f.label :title, :class => :hidden
+			= f.text_field :title, :class => "title", :title => "Title"
+		%div
+			= f.label :institution_name, :class => :hidden
+			= f.text_field :institution_name, :class => "title", :title => "Institution name"
+		%div
+			= f.label :location, :class => :hidden
+			= f.text_field :location, :class => "title", :title => "Location"
+		%div
+			= f.label :description, :class => :hidden
+			= f.text_area :description, :class => "title", :title => "Summary"
+		%div
+			= f.label :hyperlink, :class => :hidden
+			= f.text_area :hyperlink, :class => "title", :title => "Hyperlink"
+		%div#start
+			%p Start:
+			= f.label :start_month, :class => :hidden
+			= f.select :start_month, Date::MONTHNAMES.compact.zip((1..12).entries), { :include_blank => 'Month' }, { :class => "month" }
+			= f.label :start_year, :class => :hidden
+			= f.select :start_year, (1900..Time.now.year).to_a.reverse, :include_blank => 'Year'
+		%div#current
+			= f.label :current, "Still working on this project?", :class => "checkbox"
+			= f.check_box :current, :class => "checkbox"
+		%div#end{ :style => "display: none;" }
+			%p End:
+			= f.label :end_month, :class => :hidden
+			= f.select :end_month, Date::MONTHNAMES.compact.zip((1..12).entries), { :include_blank => 'Month' }, { :class => "month" }
+			= f.label :end_year, :class => :hidden
+			= f.select :end_year, (1900..Time.now.year).to_a.reverse, :include_blank => 'Year'
+		%div
+			= f.file_field :image
+		%div
+			= f.submit "Save", :class => "save_button"
+
+%div.spacer
+	%br/
+
+%div#sidebar
+	%h3 
+	
+%div#footer

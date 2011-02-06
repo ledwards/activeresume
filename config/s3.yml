@@ -1,0 +1,22 @@
+development: &development
+  access_key_id: ENV['S3_KEY']
+  secret_access_key: ENV['S3_SECRET']
+  bucket: ledwards-activeresume-dev
+
+staging:
+  access_key_id: ENV['S3_KEY']
+  secret_access_key: ENV['S3_SECRET']
+  bucket: ledwards-activeresume-staging
+
+production:
+  access_key_id: ENV['S3_KEY']
+  secret_access_key: ENV['S3_SECRET']
+  bucket: ledwards-activeresume-production
+
+test: &test
+  access_key_id: ENV['S3_KEY']
+  secret_access_key: ENV['S3_SECRET']
+  bucket: ledwards-activeresume-test
+  
+cucumber:
+  <<: *test

@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   has_many :employments
   has_many :educations
   has_one :profile
+  has_many :portfolio_items
   
   before_validation :create_profile
   

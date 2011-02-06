@@ -4,13 +4,15 @@ gem 'rails', '3.0.3'
 gem 'pg'
 gem 'heroku'
 
-gem 'devise'
+gem 'aws-s3', :require => 'aws/s3'
 gem 'cancan'
 gem 'compass', ">= 0.10.6"
+gem 'devise'
 gem 'haml-rails'
 gem 'hpricot'
 gem 'fancy-buttons'
 gem 'jquery-rails'
+gem 'paperclip'
 gem 'ruby_parser'
 
 group :development, :test do
@@ -22,6 +24,7 @@ group :development, :test do
 	gem 'factory_girl_rails'
 	gem 'faker'
 	gem 'jasmine'
+	gem 'mock-aws-s3'
   gem 'rspec'
 	gem 'rspec-rails'
 	gem 'shoulda'
