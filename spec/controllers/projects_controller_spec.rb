@@ -23,7 +23,7 @@ describe ProjectsController do
     end
   end
   
-  describe "create" do
+  describe :create do
     before do
       @user = Factory(:user)
       sign_in @user

@@ -14,28 +14,27 @@ describe ProfilesController do
   end
   
   describe "#update" do
-    before do
-      @user = Factory.create(:user)
-      sign_in @user
-      @valid_params = { :profile => { :phone => "555-555-5550" } }
-      @invalid_params = { :profile => { :foo => "bar" } }
-    end
-
     context "for valid params" do
+      before do
+        @user = Factory.create(:user)
+        sign_in @user
+        @valid_params = { :email => "test_email@example.com" }
+        @profile = @user.profile
+      end
+      
       it "updates the record with new attributes" do
-        post :update, :with => @valid_params
-        @user.profile.phone.should == @valid_params[:phone]
+        expect { put :update, { :profile => @valid_params }; @profile.reload }.should change(@profile, :email)
       end
       
       it "redirects to the dashboard" do
-        post :update, :with => @valid_params
+        put :update, :profile => @valid_params
         response.should redirect_to(user_root_path)
       end
+      
+      it "sets flash notice" do
+        put :update, :profile => @valid_params
+        flash[:notice].should be
+      end
     end
-    
-    context "for invalid params" do
-    end
-    
   end
-  
 end

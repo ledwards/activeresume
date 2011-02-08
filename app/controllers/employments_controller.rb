@@ -13,7 +13,8 @@ class EmploymentsController < ApplicationController
       flash[:notice] = "Employment record was successfully created."
       redirect_to dashboard_path
     else
-      redirect_to new_employment_path
+      flash[:alert] = @employment.errors.full_messages.join("<br /").html_safe
+      render :new
     end
   end
   

@@ -42,22 +42,6 @@ ActiveRecord::Schema.define(:version => 20110206155820) do
     t.datetime "updated_at"
   end
 
-  create_table "portfolio_items", :force => true do |t|
-    t.string   "title"
-    t.string   "institution_name"
-    t.string   "location"
-    t.boolean  "current"
-    t.integer  "start_month"
-    t.integer  "start_year"
-    t.integer  "end_month"
-    t.integer  "end_year"
-    t.text     "description"
-    t.string   "hyperlink"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "profiles", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"

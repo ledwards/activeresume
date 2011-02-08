@@ -1,6 +1,14 @@
 %div#header
 	%h1 My Portfolio
 
+	%div#errors
+		- if notice
+			%div#notice
+				= notice
+		- if alert
+			%div#alert
+				= alert
+
 %div#content
 	%h3 New project
 	= form_for(@project) do |f|

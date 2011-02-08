@@ -1,6 +1,14 @@
 %div#header
 	%h1 My Resume
 
+	%div#errors
+		- if notice
+			%div#notice
+				= notice
+		- if alert
+			%div#alert
+				= alert
+
 %div#content
 	%h3 New employment record
 	= form_for(@employment) do |f|

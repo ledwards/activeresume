@@ -5,7 +5,7 @@ class Project < ActiveRecord::Base
       :styles => { :large => "780x585>", :thumbnail => "125x125#" },
       :default_url => '/images/missing_:style.png',
       :storage => :s3,
-      :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+      :s3_credentials => "#{Rails.root}/config/s3.yml",
       :path => ":image/:id/:style.:extension"
       
   validates_presence_of :title  
