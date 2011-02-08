@@ -1782,7 +1782,34 @@ body.employments #content, body.educations #content, body.profiles #content, bod
   overflow-x: hidden;
 }
 /* line 199, src/screen.scss */
-body.employments .save_button, body.educations .save_button, body.profiles .save_button, body.projects .save_button {
+body.employments span.watermark, body.educations span.watermark, body.profiles span.watermark, body.projects span.watermark {
+  color: #999999;
+  display: block;
+  font-family: Lucida Grande;
+  font-size: 18px;
+  height: 34px;
+  left: 9px;
+  line-height: 34px;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  top: 9px;
+}
+/* line 214, src/screen.scss */
+body.employments form p, body.educations form p, body.profiles form p, body.projects form p {
+  font-weight: bold;
+  font-size: 1.5em;
+  display: inline;
+}
+/* line 220, src/screen.scss */
+body.employments form .iPhoneCheckContainer, body.educations form .iPhoneCheckContainer, body.profiles form .iPhoneCheckContainer, body.projects form .iPhoneCheckContainer {
+  margin-left: 1em;
+  float: left;
+}
+/* line 225, src/screen.scss */
+body.employments form .save_button, body.educations form .save_button, body.profiles form .save_button, body.projects form .save_button {
+  margin-top: 3em;
+  clear: both;
   background-color: #3ab700;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #4aea00), color-stop(50%, #3ab700), color-stop(100%, #2a8400));
   background-image: -moz-linear-gradient(top, #4aea00 0%, #3ab700 50%, #2a8400 100%);
@@ -1820,13 +1847,13 @@ body.employments .save_button, body.educations .save_button, body.profiles .save
   font-size: 1.5em;
 }
 /* line 48, src/partials/_multi-line-button.sass */
-body.employments .save_button:hover, body.employments .save_button:focus, body.educations .save_button:hover, body.educations .save_button:focus, body.profiles .save_button:hover, body.profiles .save_button:focus, body.projects .save_button:hover, body.projects .save_button:focus {
+body.employments form .save_button:hover, body.employments form .save_button:focus, body.educations form .save_button:hover, body.educations form .save_button:focus, body.profiles form .save_button:hover, body.profiles form .save_button:focus, body.projects form .save_button:hover, body.projects form .save_button:focus {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #54ff04), color-stop(50%, #42d100), color-stop(100%, #2a8400));
   background-image: -moz-linear-gradient(top, #54ff04 0%, #42d100 50%, #2a8400 100%);
   background-image: linear-gradient(top, #54ff04 0%, #42d100 50%, #2a8400 100%);
 }
 /* line 50, src/partials/_multi-line-button.sass */
-body.employments .save_button:active, body.employments .save_button.depressed, body.educations .save_button:active, body.educations .save_button.depressed, body.profiles .save_button:active, body.profiles .save_button.depressed, body.projects .save_button:active, body.projects .save_button.depressed {
+body.employments form .save_button:active, body.employments form .save_button.depressed, body.educations form .save_button:active, body.educations form .save_button.depressed, body.profiles form .save_button:active, body.profiles form .save_button.depressed, body.projects form .save_button:active, body.projects form .save_button.depressed {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #359608), color-stop(100%, #3dae09));
   background-image: -moz-linear-gradient(top, #359608 0%, #3dae09 100%);
   background-image: linear-gradient(top, #359608 0%, #3dae09 100%);
@@ -1837,11 +1864,11 @@ body.employments .save_button:active, body.employments .save_button.depressed, b
   border-color: #1a5100;
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-body.employments .save_button, body.educations .save_button, body.profiles .save_button, body.projects .save_button {
+body.employments form .save_button, body.educations form .save_button, body.profiles form .save_button, body.projects form .save_button {
   *display: inline;
 }
 /* line 75, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-body.employments .save_button img, body.educations .save_button img, body.profiles .save_button img, body.projects .save_button img {
+body.employments form .save_button img, body.educations form .save_button img, body.profiles form .save_button img, body.projects form .save_button img {
   margin: 0 3px -3px 0 !important;
   padding: 0;
   border: none;
@@ -1850,57 +1877,49 @@ body.employments .save_button img, body.educations .save_button img, body.profil
   float: none;
 }
 /* line 95, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-body.employments .save_button[type], body.educations .save_button[type], body.profiles .save_button[type], body.projects .save_button[type] {
+body.employments form .save_button[type], body.educations form .save_button[type], body.profiles form .save_button[type], body.projects form .save_button[type] {
   padding: 4px 10px 4px 7px;
   line-height: 17px;
 }
 /* line 98, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-*:first-child + html body.employments .save_button[type], *:first-child + html body.educations .save_button[type], *:first-child + html body.profiles .save_button[type], *:first-child + html body.projects .save_button[type] {
+*:first-child + html body.employments form .save_button[type], *:first-child + html body.educations form .save_button[type], *:first-child + html body.profiles form .save_button[type], *:first-child + html body.projects form .save_button[type] {
   padding: 4px 10px 3px 7px;
 }
-/* line 207, src/screen.scss */
-body.employments textarea#employment_summary, body.employments textarea#education_summary, body.employments textarea#project_description, body.educations textarea#employment_summary, body.educations textarea#education_summary, body.educations textarea#project_description, body.profiles textarea#employment_summary, body.profiles textarea#education_summary, body.profiles textarea#project_description, body.projects textarea#employment_summary, body.projects textarea#education_summary, body.projects textarea#project_description {
+/* line 235, src/screen.scss */
+body.employments form textarea#employment_summary, body.employments form textarea#education_summary, body.employments form textarea#project_description, body.educations form textarea#employment_summary, body.educations form textarea#education_summary, body.educations form textarea#project_description, body.profiles form textarea#employment_summary, body.profiles form textarea#education_summary, body.profiles form textarea#project_description, body.projects form textarea#employment_summary, body.projects form textarea#education_summary, body.projects form textarea#project_description {
   width: 300px;
   height: 5em;
   color: #999999;
   font-family: Lucida Grande;
   font-size: 18px;
 }
-/* line 215, src/screen.scss */
-body.employments textarea, body.educations textarea, body.profiles textarea, body.projects textarea {
+/* line 243, src/screen.scss */
+body.employments form textarea, body.educations form textarea, body.profiles form textarea, body.projects form textarea {
   display: block;
 }
-/* line 219, src/screen.scss */
-body.employments span.watermark, body.educations span.watermark, body.profiles span.watermark, body.projects span.watermark {
-  color: #999999;
+/* line 247, src/screen.scss */
+body.employments form .block, body.educations form .block, body.profiles form .block, body.projects form .block {
   display: block;
-  font-family: Lucida Grande;
-  font-size: 18px;
-  height: 34px;
-  left: 9px;
-  line-height: 34px;
-  pointer-events: none;
-  position: absolute;
-  text-align: left;
-  top: 9px;
 }
-/* line 233, src/screen.scss */
-body.employments label.hidden, body.educations label.hidden, body.profiles label.hidden, body.projects label.hidden {
+/* line 251, src/screen.scss */
+body.employments form label.hidden, body.educations form label.hidden, body.profiles form label.hidden, body.projects form label.hidden {
   display: none;
 }
-/* line 236, src/screen.scss */
-body.employments form p, body.educations form p, body.profiles form p, body.projects form p {
-  font-weight: bold;
-  font-size: 1.5em;
+/* line 255, src/screen.scss */
+body.employments form label.checkbox, body.educations form label.checkbox, body.profiles form label.checkbox, body.projects form label.checkbox {
+  float: left;
   display: inline;
 }
-/* line 242, src/screen.scss */
-body.employments form .iPhoneCheckContainer, body.educations form .iPhoneCheckContainer, body.profiles form .iPhoneCheckContainer, body.projects form .iPhoneCheckContainer {
-  margin-left: 12em;
-  margin-top: -2.2em;
+/* line 260, src/screen.scss */
+body.employments form div#current, body.employments form div#end, body.employments form div#start, body.educations form div#current, body.educations form div#end, body.educations form div#start, body.profiles form div#current, body.profiles form div#end, body.profiles form div#start, body.projects form div#current, body.projects form div#end, body.projects form div#start {
+  float: left;
+}
+/* line 264, src/screen.scss */
+body.employments form div#end, body.educations form div#end, body.profiles form div#end, body.projects form div#end {
+  margin-left: .5em;
 }
 
-/* line 250, src/screen.scss */
+/* line 271, src/screen.scss */
 body.profiles input, body.profiles label {
   display: block;
 }

@@ -195,27 +195,7 @@ body.employments, body.educations, body.profiles, body.projects {
     @include column(16);
 		text-align: left;
 	}
-	
-	.save_button {
-		@include color-multi-line-button($save-button-color);
-		@include button-button;
-		@include border-radius("8px");
-		@include append-bottom;
-		font-size: 1.5em;
-	}
-	
-	textarea#employment_summary, textarea#education_summary, textarea#project_description {
-		width: 300px;
-		height: 5em;
-		color: #999999;
-    font-family: Lucida Grande;
-    font-size: 18px;
-	}
-	
-	textarea {
-		display: block;
-	}
-	
+		
 	span.watermark {
     color: #999999;
     display: block;
@@ -229,9 +209,7 @@ body.employments, body.educations, body.profiles, body.projects {
     text-align: left;
     top: 9px;
 	}
-	
-	label.hidden { display: none; }
-	
+		
 	form {
 		p {
 			font-weight: bold;
@@ -240,8 +218,51 @@ body.employments, body.educations, body.profiles, body.projects {
 		}
 		
 		.iPhoneCheckContainer {
-			margin-left: 12em;
-			margin-top: -2.2em;
+			margin-left: 1em;
+			float: left;
+		}
+		
+		.save_button {
+			margin-top: 3em;
+			clear: both;
+			@include color-multi-line-button($save-button-color);
+			@include button-button;
+			@include border-radius("8px");
+			@include append-bottom;
+			font-size: 1.5em;
+		}
+
+		textarea#employment_summary, textarea#education_summary, textarea#project_description {
+			width: 300px;
+			height: 5em;
+			color: #999999;
+	    font-family: Lucida Grande;
+	    font-size: 18px;
+		}
+
+		textarea {
+			display: block;
+		}
+		
+		.block {
+			display: block;
+		}
+		
+		label.hidden {
+			display: none;
+		}
+		
+		label.checkbox {
+			float: left;
+			display: inline;
+		}
+		
+		div#current, div#end, div#start {
+			float: left;
+		}
+		
+		div#end {
+			margin-left: .5em;
 		}
 	}
 }

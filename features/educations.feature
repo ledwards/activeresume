@@ -28,7 +28,7 @@ Feature: Education history
 		And I fill in "Location" with "Bedford, MA"
 		And I select "October" from "Start month"
 		And I select "2007" from "Start year"
-		And I uncheck "Still at this job?"
+		And I uncheck "Still studying here?"
 		And I select "September" from "Start month"
 		And I select "2010" from "Start year"
 		And I fill in "Summary" with "Big old college description."

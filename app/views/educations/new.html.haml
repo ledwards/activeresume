@@ -5,32 +5,18 @@
 	%h3 New education record
 	= form_for(@education) do |f|
 		%div
-			= f.label :major, :class => :hidden
-			= f.text_field :major, :class => "title", :title => "Major"
+			= f.label :major, :class => :block
+			= f.text_field :major, :class => "title block", :title => "your major here"
 		%div
-			= f.label :institution_name, :class => :hidden
-			= f.text_field :institution_name, :class => "title", :title => "Institution name"
+			= f.label :institution_name, :class => :block
+			= f.text_field :institution_name, :class => "title block", :title => "name of the college/university"
 		%div
-			= f.label :location, :class => :hidden
-			= f.text_field :location, :class => "title", :title => "Location"
+			= f.label :location, :class => :block
+			= f.text_field :location, :class => "title block", :title => "where they are located"
 		%div
-			= f.label :summary, :class => :hidden
-			= f.text_area :summary, :class => "title", :title => "Summary"
-		%div#start
-			%p Start:
-			= f.label :start_month, :class => :hidden
-			= f.select :start_month, Date::MONTHNAMES.compact.zip((1..12).entries), { :include_blank => 'Month' }, { :class => "month" }
-			= f.label :start_year, :class => :hidden
-			= f.select :start_year, (1900..Time.now.year).to_a.reverse, :include_blank => 'Year'
-		%div#current
-			= f.label :current, "Still at this job?", :class => "checkbox"
-			= f.check_box :current, :class => "checkbox"
-		%div#end{ :style => "display: none;" }
-			%p End:
-			= f.label :end_month, :class => :hidden
-			= f.select :end_month, Date::MONTHNAMES.compact.zip((1..12).entries), { :include_blank => 'Month' }, { :class => "month" }
-			= f.label :end_month, :class => :hidden
-			= f.select :end_month, (1900..Time.now.year).to_a.reverse, :include_blank => 'Year'
+			= f.label :summary, :class => :block
+			= f.text_area :summary, :class => "title block", :title => "short summary of your time here"
+		= render :partial => "shared/date_fields", :locals => { :f => f, :hint => "Still studying here?" }
 		%div
 			= f.submit "Save", :class => "save_button"
 

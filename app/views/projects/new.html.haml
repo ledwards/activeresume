@@ -5,37 +5,24 @@
 	%h3 New project
 	= form_for(@project) do |f|
 		%div
-			= f.label :title, :class => :hidden
-			= f.text_field :title, :class => "title", :title => "Title"
+			= f.label :title, :class => :block
+			= f.text_field :title, :class => "title block", :title => "title of the project"
 		%div
-			= f.label :institution_name, :class => :hidden
-			= f.text_field :institution_name, :class => "title", :title => "Institution name"
+			= f.label :institution_name, :class => :block
+			= f.text_field :institution_name, :class => "title block", :title => "where you were working/studying"
 		%div
-			= f.label :location, :class => :hidden
-			= f.text_field :location, :class => "title", :title => "Location"
+			= f.label :location, :class => :block
+			= f.text_field :location, :class => "title block", :title => "location of the institution"
 		%div
-			= f.label :description, :class => :hidden
-			= f.text_area :description, :class => "title", :title => "Summary"
+			= f.label :description, :class => :block
+			= f.text_area :description, :class => "title block", :title => "short summary of the project"
 		%div
-			= f.label :hyperlink, :class => :hidden
-			= f.text_area :hyperlink, :class => "title", :title => "Hyperlink"
-		%div#start
-			%p Start:
-			= f.label :start_month, :class => :hidden
-			= f.select :start_month, Date::MONTHNAMES.compact.zip((1..12).entries), { :include_blank => 'Month' }, { :class => "month" }
-			= f.label :start_year, :class => :hidden
-			= f.select :start_year, (1900..Time.now.year).to_a.reverse, :include_blank => 'Year'
-		%div#current
-			= f.label :current, "Still working on this project?", :class => "checkbox"
-			= f.check_box :current, :class => "checkbox"
-		%div#end{ :style => "display: none;" }
-			%p End:
-			= f.label :end_month, :class => :hidden
-			= f.select :end_month, Date::MONTHNAMES.compact.zip((1..12).entries), { :include_blank => 'Month' }, { :class => "month" }
-			= f.label :end_year, :class => :hidden
-			= f.select :end_year, (1900..Time.now.year).to_a.reverse, :include_blank => 'Year'
+			= f.label :hyperlink, :class => :block
+			= f.text_field :hyperlink, :class => "title block", :title => "link to more information"
 		%div
+			= f.label :image
 			= f.file_field :image
+		= render :partial => "shared/date_fields", :locals => { :f => f, :hint => "Still working on this project?" }
 		%div
 			= f.submit "Save", :class => "save_button"
 
