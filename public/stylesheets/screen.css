@@ -1747,7 +1747,7 @@ body.dashboard #dashboard_container #resume_preview div {
 }
 
 /* line 185, src/screen.scss */
-body.employments #sidebar, body.educations #sidebar, body.profiles #sidebar, body.projects #sidebar {
+body.employments #sidebar, body.educations #sidebar, body.profiles #sidebar, body.projects #sidebar, body.publications #sidebar {
   display: inline;
   float: left;
   margin-right: 0;
@@ -1755,22 +1755,22 @@ body.employments #sidebar, body.educations #sidebar, body.profiles #sidebar, bod
   text-align: left;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.employments #sidebar, * html body.educations #sidebar, * html body.profiles #sidebar, * html body.projects #sidebar {
+* html body.employments #sidebar, * html body.educations #sidebar, * html body.profiles #sidebar, * html body.projects #sidebar, * html body.publications #sidebar {
   overflow-x: hidden;
 }
 /* line 190, src/screen.scss */
-body.employments .spacer, body.educations .spacer, body.profiles .spacer, body.projects .spacer {
+body.employments .spacer, body.educations .spacer, body.profiles .spacer, body.projects .spacer, body.publications .spacer {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 30px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.employments .spacer, * html body.educations .spacer, * html body.profiles .spacer, * html body.projects .spacer {
+* html body.employments .spacer, * html body.educations .spacer, * html body.profiles .spacer, * html body.projects .spacer, * html body.publications .spacer {
   overflow-x: hidden;
 }
 /* line 194, src/screen.scss */
-body.employments #content, body.educations #content, body.profiles #content, body.projects #content {
+body.employments #content, body.educations #content, body.profiles #content, body.projects #content, body.publications #content {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -1778,11 +1778,11 @@ body.employments #content, body.educations #content, body.profiles #content, bod
   text-align: left;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.employments #content, * html body.educations #content, * html body.profiles #content, * html body.projects #content {
+* html body.employments #content, * html body.educations #content, * html body.profiles #content, * html body.projects #content, * html body.publications #content {
   overflow-x: hidden;
 }
 /* line 199, src/screen.scss */
-body.employments span.watermark, body.educations span.watermark, body.profiles span.watermark, body.projects span.watermark {
+body.employments span.watermark, body.educations span.watermark, body.profiles span.watermark, body.projects span.watermark, body.publications span.watermark {
   color: #999999;
   display: block;
   font-family: Lucida Grande;
@@ -1796,18 +1796,18 @@ body.employments span.watermark, body.educations span.watermark, body.profiles s
   top: 9px;
 }
 /* line 214, src/screen.scss */
-body.employments form p, body.educations form p, body.profiles form p, body.projects form p {
+body.employments form p, body.educations form p, body.profiles form p, body.projects form p, body.publications form p {
   font-weight: bold;
   font-size: 1.5em;
   display: inline;
 }
 /* line 220, src/screen.scss */
-body.employments form .iPhoneCheckContainer, body.educations form .iPhoneCheckContainer, body.profiles form .iPhoneCheckContainer, body.projects form .iPhoneCheckContainer {
+body.employments form .iPhoneCheckContainer, body.educations form .iPhoneCheckContainer, body.profiles form .iPhoneCheckContainer, body.projects form .iPhoneCheckContainer, body.publications form .iPhoneCheckContainer {
   margin-left: 1em;
   float: left;
 }
 /* line 225, src/screen.scss */
-body.employments form .save_button, body.educations form .save_button, body.profiles form .save_button, body.projects form .save_button {
+body.employments form .save_button, body.educations form .save_button, body.profiles form .save_button, body.projects form .save_button, body.publications form .save_button {
   margin-top: 3em;
   clear: both;
   background-color: #3ab700;
@@ -1847,13 +1847,13 @@ body.employments form .save_button, body.educations form .save_button, body.prof
   font-size: 1.5em;
 }
 /* line 48, src/partials/_multi-line-button.sass */
-body.employments form .save_button:hover, body.employments form .save_button:focus, body.educations form .save_button:hover, body.educations form .save_button:focus, body.profiles form .save_button:hover, body.profiles form .save_button:focus, body.projects form .save_button:hover, body.projects form .save_button:focus {
+body.employments form .save_button:hover, body.employments form .save_button:focus, body.educations form .save_button:hover, body.educations form .save_button:focus, body.profiles form .save_button:hover, body.profiles form .save_button:focus, body.projects form .save_button:hover, body.projects form .save_button:focus, body.publications form .save_button:hover, body.publications form .save_button:focus {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #54ff04), color-stop(50%, #42d100), color-stop(100%, #2a8400));
   background-image: -moz-linear-gradient(top, #54ff04 0%, #42d100 50%, #2a8400 100%);
   background-image: linear-gradient(top, #54ff04 0%, #42d100 50%, #2a8400 100%);
 }
 /* line 50, src/partials/_multi-line-button.sass */
-body.employments form .save_button:active, body.employments form .save_button.depressed, body.educations form .save_button:active, body.educations form .save_button.depressed, body.profiles form .save_button:active, body.profiles form .save_button.depressed, body.projects form .save_button:active, body.projects form .save_button.depressed {
+body.employments form .save_button:active, body.employments form .save_button.depressed, body.educations form .save_button:active, body.educations form .save_button.depressed, body.profiles form .save_button:active, body.profiles form .save_button.depressed, body.projects form .save_button:active, body.projects form .save_button.depressed, body.publications form .save_button:active, body.publications form .save_button.depressed {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #359608), color-stop(100%, #3dae09));
   background-image: -moz-linear-gradient(top, #359608 0%, #3dae09 100%);
   background-image: linear-gradient(top, #359608 0%, #3dae09 100%);
@@ -1864,11 +1864,11 @@ body.employments form .save_button:active, body.employments form .save_button.de
   border-color: #1a5100;
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-body.employments form .save_button, body.educations form .save_button, body.profiles form .save_button, body.projects form .save_button {
+body.employments form .save_button, body.educations form .save_button, body.profiles form .save_button, body.projects form .save_button, body.publications form .save_button {
   *display: inline;
 }
 /* line 75, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-body.employments form .save_button img, body.educations form .save_button img, body.profiles form .save_button img, body.projects form .save_button img {
+body.employments form .save_button img, body.educations form .save_button img, body.profiles form .save_button img, body.projects form .save_button img, body.publications form .save_button img {
   margin: 0 3px -3px 0 !important;
   padding: 0;
   border: none;
@@ -1877,16 +1877,16 @@ body.employments form .save_button img, body.educations form .save_button img, b
   float: none;
 }
 /* line 95, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-body.employments form .save_button[type], body.educations form .save_button[type], body.profiles form .save_button[type], body.projects form .save_button[type] {
+body.employments form .save_button[type], body.educations form .save_button[type], body.profiles form .save_button[type], body.projects form .save_button[type], body.publications form .save_button[type] {
   padding: 4px 10px 4px 7px;
   line-height: 17px;
 }
 /* line 98, ../../../../../.rvm/gems/ruby-1.9.2-p0@dynamicresume/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
-*:first-child + html body.employments form .save_button[type], *:first-child + html body.educations form .save_button[type], *:first-child + html body.profiles form .save_button[type], *:first-child + html body.projects form .save_button[type] {
+*:first-child + html body.employments form .save_button[type], *:first-child + html body.educations form .save_button[type], *:first-child + html body.profiles form .save_button[type], *:first-child + html body.projects form .save_button[type], *:first-child + html body.publications form .save_button[type] {
   padding: 4px 10px 3px 7px;
 }
 /* line 235, src/screen.scss */
-body.employments form textarea#employment_summary, body.employments form textarea#education_summary, body.employments form textarea#project_description, body.educations form textarea#employment_summary, body.educations form textarea#education_summary, body.educations form textarea#project_description, body.profiles form textarea#employment_summary, body.profiles form textarea#education_summary, body.profiles form textarea#project_description, body.projects form textarea#employment_summary, body.projects form textarea#education_summary, body.projects form textarea#project_description {
+body.employments form textarea#employment_summary, body.employments form textarea#education_summary, body.employments form textarea#project_description, body.educations form textarea#employment_summary, body.educations form textarea#education_summary, body.educations form textarea#project_description, body.profiles form textarea#employment_summary, body.profiles form textarea#education_summary, body.profiles form textarea#project_description, body.projects form textarea#employment_summary, body.projects form textarea#education_summary, body.projects form textarea#project_description, body.publications form textarea#employment_summary, body.publications form textarea#education_summary, body.publications form textarea#project_description {
   width: 300px;
   height: 5em;
   color: #999999;
@@ -1894,28 +1894,28 @@ body.employments form textarea#employment_summary, body.employments form textare
   font-size: 18px;
 }
 /* line 243, src/screen.scss */
-body.employments form textarea, body.educations form textarea, body.profiles form textarea, body.projects form textarea {
+body.employments form textarea, body.educations form textarea, body.profiles form textarea, body.projects form textarea, body.publications form textarea {
   display: block;
 }
 /* line 247, src/screen.scss */
-body.employments form .block, body.educations form .block, body.profiles form .block, body.projects form .block {
+body.employments form .block, body.educations form .block, body.profiles form .block, body.projects form .block, body.publications form .block {
   display: block;
 }
 /* line 251, src/screen.scss */
-body.employments form label.hidden, body.educations form label.hidden, body.profiles form label.hidden, body.projects form label.hidden {
+body.employments form label.hidden, body.educations form label.hidden, body.profiles form label.hidden, body.projects form label.hidden, body.publications form label.hidden {
   display: none;
 }
 /* line 255, src/screen.scss */
-body.employments form label.checkbox, body.educations form label.checkbox, body.profiles form label.checkbox, body.projects form label.checkbox {
+body.employments form label.checkbox, body.educations form label.checkbox, body.profiles form label.checkbox, body.projects form label.checkbox, body.publications form label.checkbox {
   float: left;
   display: inline;
 }
 /* line 260, src/screen.scss */
-body.employments form div#current, body.employments form div#end, body.employments form div#start, body.educations form div#current, body.educations form div#end, body.educations form div#start, body.profiles form div#current, body.profiles form div#end, body.profiles form div#start, body.projects form div#current, body.projects form div#end, body.projects form div#start {
+body.employments form div#current, body.employments form div#end, body.employments form div#start, body.educations form div#current, body.educations form div#end, body.educations form div#start, body.profiles form div#current, body.profiles form div#end, body.profiles form div#start, body.projects form div#current, body.projects form div#end, body.projects form div#start, body.publications form div#current, body.publications form div#end, body.publications form div#start {
   float: left;
 }
 /* line 264, src/screen.scss */
-body.employments form div#end, body.educations form div#end, body.profiles form div#end, body.projects form div#end {
+body.employments form div#end, body.educations form div#end, body.profiles form div#end, body.projects form div#end, body.publications form div#end {
   margin-left: .5em;
 }
 

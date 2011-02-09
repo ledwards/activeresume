@@ -9,6 +9,7 @@ Activeresume::Application.routes.draw do
   resources :educations
   resource :profile
   resources :projects
+  resources :publications
   
   root :to => "welcome#index"
 end

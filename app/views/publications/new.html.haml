@@ -1,0 +1,42 @@
+%div#header
+	%h1 My Resume
+
+	%div#errors
+		- if notice
+			%div#notice
+				= notice
+		- if alert
+			%div#alert
+				= alert
+
+%div#content
+	%h3 New publication
+	= form_for(@publication) do |f|
+		%div
+			= f.label :title, :class => :block
+			= f.text_field :title, :class => "title block", :title => "title of the publication"
+		%div
+			= f.label :author, :class => :block
+			= f.text_field :author, :class => "title block", :title => "author or authors"
+		%div
+			= f.label :publisher, :class => :block
+			= f.text_field :publisher, :class => "title block", :title => "publisher/publication appeared in"
+		%div
+			= f.label :publication_date, :class => :block
+			= f.text_field :publication_date, :class => "title block", :title => "date of publication or issue no."
+		%div
+			= f.label :description, :class => :block
+			= f.text_area :description, :class => "title block", :title => "short summary of the publication"
+		%div
+			= f.label :hyperlink, :class => :block
+			= f.text_field :hyperlink, :class => "title block", :title => "link to more information"
+		%div
+			= f.submit "Save", :class => "save_button"
+
+%div.spacer
+	%br/
+
+%div#sidebar
+	%h3
+
+%div#footer

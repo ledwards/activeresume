@@ -12,12 +12,12 @@
 %div#dashboard_container
 	%div.spacer
 		%br/
-	
+
 	%div#resume_preview
 		%div
 			%h3
 				= "#{current_user.display_name}'s Resume"
-		
+
 			%h4 Employment History
 			- if @employments.any?
 				%ul
@@ -25,7 +25,7 @@
 			- else
 				%ul
 					%li No employment records. Add one!
-			
+
 			%h4 Education History
 			- if @educations.any?
 				%ul
@@ -33,7 +33,15 @@
 			- else
 				%ul
 					%li No education records. Add one!
-			
+
+			%h4 Publications
+			- if @publications.any?
+				%ul
+					= render :partial => "publication", :collection => @publications
+			- else
+				%ul
+					%li No publications. Add one!
+
 			%h4 Projects
 			- if @projects.any?
 				%ul
@@ -56,7 +64,7 @@
 			%dd
 				= link_to "Add education history", new_education_path
 			%dd
-				= link_to "Add featured work", "#"
+				= link_to "Add publication history", new_publication_path
 		%dl
 			%dt
 				My Portfolio
@@ -69,5 +77,5 @@
 				= link_to "Account settings", "#"
 			%dd
 				= link_to "Sign out", destroy_user_session_path
-				
+
 %div#footer
