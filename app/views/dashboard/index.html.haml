@@ -19,7 +19,7 @@
 				= "#{current_user.display_name}'s Resume"
 
 			%h4 Employment History
-			- if @employments.any?
+			- if @employments
 				%ul
 					= render :partial => "employment", :collection => @employments
 			- else
@@ -27,7 +27,7 @@
 					%li No employment records. Add one!
 
 			%h4 Education History
-			- if @educations.any?
+			- if @educations
 				%ul
 					= render :partial => "education", :collection => @educations
 			- else
@@ -35,7 +35,7 @@
 					%li No education records. Add one!
 
 			%h4 Publications
-			- if @publications.any?
+			- if @publications
 				%ul
 					= render :partial => "publication", :collection => @publications
 			- else
@@ -43,7 +43,7 @@
 					%li No publications. Add one!
 
 			%h4 Projects
-			- if @projects.any?
+			- if @projects
 				%ul
 					= render :partial => "project", :collection => @projects
 			- else
